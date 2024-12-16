@@ -1,0 +1,198 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    background-color: #1b1b1b; 
+    color: #f0f0f0; 
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://sun2-18.userapi.com/impg/DB5LqbDrUqXTHxa8FFPWxc5GvmsigwxeQoTfPQ/DJWaBtd2kzs.jpg?size=300x193&quality=95&sign=2ccf9b5e6cfcefa162e13bc3694fdc9c&type=album'); /* Замените на URL вашего изображения */
+    background-size: cover; 
+    background-position: center; 
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный белый фон для верхней части */
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+.centered-section {
+    text-align: center;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.7); /* Полупрозрачный фон для секций */
+    margin: 20px;
+    border-radius: 8px; /* Закругленные углы */
+}
+
+.sphere-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.sphere {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.light-gray {
+    background-color: lightgray;
+}
+
+.dark-gray {
+    background-color: darkgray;
+}
+
+.gray {
+    background-color: gray;
+}
+
+.photo-gallery img,
+.hobby-photo img,
+.game-photo img,
+.series-photo img,
+.info-photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Округление углов изображений */
+}
+
+header {
+    background-color: #333; 
+    text-align: center;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f0f0f0;
+    font-weight: bold;
+}
+
+.gradient-sphere {
+    background: linear-gradient(135deg, #4A4A4A, #1E3A78, #000000);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.sphere-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.sphere {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.light-gray {
+    background-color: lightgray;
+}
+
+.dark-gray {
+    background-color: darkgray;
+}
+
+.gray {
+    background-color: gray;
+}
+
+.centered-section {
+    background-color: #444; /* Slightly darker gray */
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Stencil Std', fantasy;
+    color: #f0f0f0;
+}
+
+.photo-gallery {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.photo-gallery img {
+    width: 300px;
+    height: 300px;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+.hobby-photo,
+.game-photo,
+.series-photo,
+.info-photo {
+    margin-top: 20px;
+}
+
+.hobby-photo img,
+.game-photo img,
+.series-photo img,
+.info-photo img {
+    width: 450px;
+    height: 400px;
+    border-radius: 5px;
+}
+
+p {
+    font-variant: small-caps;
+}

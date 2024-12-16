@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Визитка</title>
+    <link rel="stylesheet" href="Untitled-2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Stencil+Std&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Визитка</h1>
+        <nav>
+            <ul>
+                <li><a href="#hobbies">Увлечения</a></li>
+                <li><a href="#favorite-game">Любимая компьютерная игра</a></li>
+                <li><a href="#favorite-series">Любимые сериалы</a></li>
+                <li><a href="#extra-info">Дополнительная информация</a></li>
+            </ul>
+            <div class="gradient-sphere"></div>
+        </nav>
+    </header>
+
+    <div class="sphere-container">
+        <div class="sphere light-gray"></div>
+        <div class="sphere dark-gray"></div>
+        <div class="sphere gray"></div>
+    </div>
+
+    <section id="about" class="centered-section">
+        <h2>Обо мне</h2>
+        <p>Меня зовут <strong>Добрынина Настя</strong>. Я студентка ITHub college.</p>
+        <p>Много читаю, открыта к новым знаниям и новому опыту.</p>
+        <div class="photo-gallery">
+            <img src="https://sun9-16.userapi.com/impg/Yb1vSFC3P-5KITHCF8IF-9i8ThpBcXDd9gUEvg/gWtEGt2Fvv4.jpg?size=1620x2160&quality=95&sign=70d89f5ef6f8c6e9f520d8f597b41056&type=album" alt="Photo 1">
+            <img src="https://sun9-73.userapi.com/impg/p7F6ggTjGwX_V-cm97DSik7PX4mCjp_PFMDctA/19hWqhcgmMM.jpg?size=1620x2160&quality=95&sign=ca2e27fdadcdf3ba4e93ab0f48bf00c9&type=album" alt="Photo 2">
+            <img src="https://sun9-1.userapi.com/impg/Z0qqwq8s0UFLm4_39bLN5HFI3D8VeYjDGXnsyQ/C_5ffbAaA5M.jpg?size=1620x2160&quality=95&sign=7e47bc822603bd839444472dc4c58c85&type=album" alt="Photo 3">
+        </div>
+    </section>
+
+    <section id="hobbies" class="centered-section">
+        <h2>Увлечения</h2>
+        <p>Я обожаю читать книги, особенно фантастику и детективы.</p>
+        <p>Моя любимая книга - Мариам Петросян "Дом, в котором.."</p>
+        <div class="hobby-photo">
+            <img src="https://avatars.dzeninfra.ru/get-zen_doc/9429668/pub_645f652ecef3ab4417f1e257_645f65fd09d15309d14a461a/scale_1200" alt="Hobbies Photo">
+            <p>Фан иллюстрация к этой книге</p>
+        </div>
+    </section>
+
+    <section id="favorite-game" class="centered-section">
+        <h2>Любимая компьютерная игра</h2>
+        <p>Моя любимая игра - Blashpemous. Я люблю игры наподобии этой, но она нравится мне больше всего из за пиксельного дизайна.</p>
+        <div class="game-photo">
+            <img src="https://i.playground.ru/e/0bWkOdg85kIxvqywDN2OYg.jpeg" alt="Favorite Game Photo">
+        </div>
+    </section>
+
+    <section id="favorite-series" class="centered-section">
+        <h2>Любимые сериалы</h2>
+        <p>У меня нет любимого сериала, но из того, что я посмотрела последним - мне понравился "Фишер".</p>
+        <div class="series-photo">
+            <img src="https://sun9-39.userapi.com/s/v1/ig2/DDXjqeKtS46ThtPBcwI3WspKgY2f7jqSypIwciiLl46bHIWN7cDVtLEbRR8i3hA9nwMHjn87-BDmkz8mfhcHSDBE.jpg?quality=96&as=32x48,48x72,72x108,108x162,160x240,240x360,360x540,480x720,540x810,600x900&from=bu&u=9eOX-ZaiGp0jv1d40axacP48IwuQ-r1vgoUuWhD-5pk&cs=403x604" alt="Favorite Series Photo">
+        </div>
+    </section>
+
+    <section id="extra-info" class="centered-section">
+        <h2>Дополнительная информация</h2>
+        <p>Я всегда открыта к новым знакомствам, обожаю путешествовать и тёплые страны.</p>
+        <div class="info-photo">
+            <img src="https://sun9-69.userapi.com/impg/H2AzN9cetsZGRrqXP98gWislIWNhWBz6K3j7LA/cMQWrcEuCqs.jpg?size=1620x2160&quality=95&sign=f00e2ff07e03273980df60d62e3c4b6c&type=album" alt="Extra Info Photo">
+            <p>лол ето Тайланд</p>
+        </div>
+    </section>
+    <script>
+
+        const header = document.querySelector('header');
+        let lastScrollY = window.scrollY;
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > lastScrollY) {
+                header.style.transform = 'translateY(-100%)'; 
+            } else {
+                header.style.transform = 'translateY(0)'; 
+            }
+            lastScrollY = window.scrollY;
+        });
+    </script>
+</body>
+</html>
