@@ -16,7 +16,7 @@ body {
 }
 
 header {
-    background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный белый фон для верхней части */
+    background-color: rgba(255, 255, 255, 0.8); 
     padding: 10px;
 }
 
@@ -38,9 +38,9 @@ nav ul li {
 .centered-section {
     text-align: center;
     padding: 40px;
-    background-color: rgba(255, 255, 255, 0.7); /* Полупрозрачный фон для секций */
+    background-color: rgba(255, 255, 255, 0.7); 
     margin: 20px;
-    border-radius: 8px; /* Закругленные углы */
+    border-radius: 8px; 
 }
 
 .sphere-container {
@@ -76,7 +76,7 @@ nav ul li {
 .info-photo img {
     width: 100%;
     height: auto;
-    border-radius: 8px; /* Округление углов изображений */
+    border-radius: 8px; 
 }
 
 header {
@@ -149,7 +149,7 @@ nav a {
 }
 
 .centered-section {
-    background-color: #444; /* Slightly darker gray */
+    background-color: #444; 
     margin: 40px auto;
     padding: 20px;
     border-radius: 10px;
